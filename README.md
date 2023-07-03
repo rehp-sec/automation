@@ -2,7 +2,6 @@ Para utilizar este script es fundamental registrar una app en Azure y asociarlo 
 
 Una vez realices lo anterior no olvides completar la siguiente información en el script sobre Azure:
 
-# Configuración de Azure
 TENANT_ID = 'xxx'
 CLIENT_ID = 'xxx'
 CLIENT_SECRET = 'xxx'
@@ -10,7 +9,6 @@ SUBSCRIPTION_ID = 'xxx'
 
 Adicionalmente deberás rellenar la información correspondiente a tu servidor SMTP:
 
-# Configuración del servidor SMTP
 SERVIDOR_SMTP = 'smtp.test.com'
 PUERTO_SMTP = 587
 REMITENTE = 'test@test.cl'
