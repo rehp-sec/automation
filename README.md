@@ -1,21 +1,11 @@
-Para utilizar este script es fundamental registrar una app en Azure y asociarlo con un rol personalizado de Azure que sólo permita permisos de lectura sobre las IPs Publicas.
+Para utilizar este script es fundamental registrar una app en Azure y asociarlo con un rol personalizado de Azure que sólo tenga permisos de lectura sobre las IPs Publicas.
 
-Una vez realices lo anterior no olvides completar la siguiente información en el script sobre Azure:
+Una vez realices lo anterior no olvides completar la siguiente información en el script sobre Azure (TENANT_ID, CLIENT_ID, CLIENT_SECRET y SUBSCRIPTION_ID).
 
-TENANT_ID = 'xxx'
-CLIENT_ID = 'xxx'
-CLIENT_SECRET = 'xxx'
-SUBSCRIPTION_ID = 'xxx'
-
-Adicionalmente deberás rellenar la información correspondiente a tu servidor SMTP:
-
-SERVIDOR_SMTP = 'smtp.test.com'
-PUERTO_SMTP = 587
-REMITENTE = 'test@test.cl'
-CONTRASENA = 'test123'
+Adicionalmente deberás rellenar la información correspondiente a tu servidor SMTP (SERVIDOR_SMTP, PUERTO_SMTP, REMITENTE y CONTRASENA).
 
 Finalmente, para ejecutar el script debes considerar los siguientes argumentos, por ejemplo:
 
 python3 scan-azure.py --ips x.x.x.x/24 x.x.x.x --destinatario test@test.cl
 
-*En adición a las IPs públicas de Azure que actualizara constantemente el script también puedes agregar IPs publicas adicionales al ejecutar el comando.
+*En adición a las IPs públicas de Azure que actualizara constantemente el script también puedes agregar IPs publicas adicionales al ejecutar el comando (que por ejemplo podrian ser las IPs publicas de tus enlaces a internet de tu ambiente on-premise).
