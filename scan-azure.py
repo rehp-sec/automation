@@ -89,7 +89,7 @@ def escanear_puertos(destinatario):
         def escanear_ip(ip):
             while True:
                 print(f"Escanenado puertos en la IP: {ip}")
-                nm.scan(hosts=ip, arguments='-p 1-65535 -sV -O -n -Pn -T5 --min-parallelism 100')
+                nm.scan(hosts=ip, arguments='-p 1-65535 -sV -O -n -Pn -T5 -sT -sU --min-parallelism 100')
                 for host in nm.all_hosts():
                     for proto in nm[host].all_protocols():
                         for puerto in nm[host][proto].keys():
