@@ -1,6 +1,6 @@
 Inicialmente instala estas librerias:
 
-pip3 install nmap python-nmap scapy azure azure-mgmt-compute azure-mgmt-storage azure-mgmt-resource azure-keyvault-secrets azure-storage-blob azure-identity azure-mgmt-network
+pip3 install python-nmap scapy azure azure-mgmt-compute azure-mgmt-storage azure-mgmt-resource azure-keyvault-secrets azure-storage-blob azure-identity azure-mgmt-network
 
 Para utilizar este script es fundamental registrar una app en Azure y asociarlo con un rol personalizado de Azure que sólo tenga permisos de lectura sobre las IPs Publicas.
 
